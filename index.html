@@ -22,6 +22,8 @@
 <body>
 <!-- ADD semantic and validated HTML -->
 <!-- ADD skip to main content -->
+  <a href="#main">skip to main content</a>
+
   <button id="theme-toggle" aria-label="Toggle light/dark mode">
     <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
@@ -45,12 +47,12 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <h2>Welcome to Civic Lens</h2>
-      <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
-      <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
-
-    <h2>Breaking News</h2>
+    <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
+    <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
+    <section id="breaking-news">
+      <h2>Breaking News</h2>
 
       <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
       <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
@@ -63,9 +65,10 @@
       <video controls>
         <source src="videos/voter-suppression.mp4" type="video/mp4">
       </video>
-      
-    <h2>Featured Articles</h2>
-      
+    </section> 
+    <section id="featured-articles">
+      <h2>Featured Articles</h2>
+        
       <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
       <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
       
@@ -101,9 +104,9 @@
       
       <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
       <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
-      
-      
-    <h2>Stay Informed. Stay Empowered.</h2>
+    </section> 
+    <section id="alerts">  
+      <h2>Stay Informed. Stay Empowered.</h2>
       <p>Receive text messages with the news you want to know.</p>
       <form action="post" method="https://wp.zybooks.com/form-viewer.php">
         <label for="name">Name</label><br>
@@ -146,13 +149,16 @@
         
         <input type="submit" value="Subscribe"> 
       </form>
+    </section>
     
-    <h2>Follow Us</h2>
-    <a href="#" target="_blank">Twitter/X</a>
-    <a href="#" target="_blank">Instagram</a>
-    <a href="#" target="_blank">YouTube</a>
-    <a href="#" target="_blank">TikTok</a>
-    <a href="#" target="_blank">LinkedIn</a>
+    <section id="social">
+      <h2>Follow Us</h2>
+      <a href="#" target="_blank">Twitter/X</a>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">YouTube</a>
+      <a href="#" target="_blank">TikTok</a>
+      <a href="#" target="_blank">LinkedIn</a>
+    </section>
   </main> 
 
   <footer>
