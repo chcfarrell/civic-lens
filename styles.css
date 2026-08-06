@@ -132,6 +132,7 @@ body.dark-mode {
 
 /* ///ADD/// Global Layout Styles */
 header { 
+  color: var(--watchdog-white);
   background-color: var(--blue-bulletin);
 } 
 
