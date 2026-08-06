@@ -101,7 +101,30 @@ body.dark-mode {
 }
 
 /* ///ADD/// Navigation Styles */
-
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.menu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+}
+.menu-button:checked ~ .menu {
+  display: flex;
+}
 
 /* ///ADD/// Global Layout Styles */
 
