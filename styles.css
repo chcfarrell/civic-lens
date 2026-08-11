@@ -133,9 +133,6 @@ body.dark-mode {
   margin: 0 auto;
   cursor: pointer;
 }
-#menu-toggle:checked ~ .menu {
-  display: flex;
-}
 
 /* ///ADD/// Global Layout Styles */
 header { 
@@ -359,9 +356,17 @@ h3 {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 
-
-/* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
-@supports (selector(:has(*))) {
-
+/* ///ADD/// Feature Query for :has() that checks if the #menu-toggle is checked */
+@supports (selector(:has(#menu-toggle: checked))) {
+  #menu-toggle:checked ~ .menu { display: flex; }
 }
